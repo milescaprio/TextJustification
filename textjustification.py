@@ -16,9 +16,9 @@ def justify(words, maxWidth):
             sections = 1
         spacearray = [spaces // sections] * sections
         spaces = spaces % sections
-        spacearray.append(0)
         for i in range(spaces):
             spacearray[i] += 1
+        spacearray.append(0)
         j = 0
         while len(wordstouse) != 0:
             string += wordstouse[0] + " " * spacearray[0]
@@ -28,7 +28,7 @@ def justify(words, maxWidth):
     print(strings)
 
 
-justify(["This", "is", "an", "example", "1234789000123" "of", "text", "justification."], 16)
+justify(["This", "is", "an", "example", "1234789000123478", "of", "text", "justification."], 16)
 
         
 
